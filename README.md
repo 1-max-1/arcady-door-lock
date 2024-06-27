@@ -2,7 +2,10 @@
 This project is an electromechanical door lock, powered by an esp32 and a couple of servos.
 
 A touchscreen is used to direct the microcontroller to lock and unlock the door. Unlocking requires a passcode to be entered.
-Servo motors on the other side of the door turn gears connected to the lock. When not in use the gears are not engaged, meaning the lock can still be used with the key as normal.
+Servo motors on the other side of the door turn gears connected to the lock.
+
+The gears are mounted on a swinging arm so that they are only engaged during the process of locking and unlocking. This allows the lock to still be used normally with a key, without encountering the resistance of permanent gears.
+Additionally, the arm removes the limiting factor of the maximum servo rotation, as I can swing the arm out of the way, rotate the gear servo backwards, then swing the arm back in and continue turning the lock.
 
 |                                      |                                                    |
 | ------------------------------------ | -------------------------------------------------- |
